@@ -11,13 +11,13 @@ function! SwitchWindow(key)
   endif
   if oldwindow==winnr()
       if a:key=='l'
-        let cmd = 'osascript ~/.vim/bundle/vim-iterm2-navigator/applescript/iterm2_l.scpt'
+        let cmd = 'osascript ~/.vim/plugged/vim-iterm2-navigator/applescript/iterm2_l.scpt'
       elseif a:key=='k'
-        let cmd = 'osascript ~/.vim/bundle/vim-iterm2-navigator/applescript/iterm2_k.scpt'
+        let cmd = 'osascript ~/.vim/plugged/vim-iterm2-navigator/applescript/iterm2_k.scpt'
       elseif a:key=='j'
-        let cmd = 'osascript ~/.vim/bundle/vim-iterm2-navigator/applescript/iterm2_j.scpt'
+        let cmd = 'osascript ~/.vim/plugged/vim-iterm2-navigator/applescript/iterm2_j.scpt'
       elseif a:key=='h'
-        let cmd = 'osascript ~/.vim/bundle/vim-iterm2-navigator/applescript/iterm2_h.scpt'
+        let cmd = 'osascript ~/.vim/plugged/vim-iterm2-navigator/applescript/iterm2_h.scpt'
       endif
       silent call system(cmd)
   endif

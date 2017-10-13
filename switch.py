@@ -13,7 +13,7 @@ key = sys.argv[1]
 
 # Query iTerm2 for the name of the active session
 name = subprocess.check_output(['osascript',path_to('iterm2_getname.scpt')])
-if '(vim)' in name:
+if 'vim' in name or 'nvim' in name:
     # Send keystrokes directly to the vim plugin
     sys.stdout.write(chr(27))
     sys.stdout.write(':call SwitchWindow("%s")'%key)
